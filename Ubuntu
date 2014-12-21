@@ -1,2 +1,12 @@
+==================DELETING =====================
 rm -rf lampp      #It deletes all files and folders contained in the lampp directory.
 rm -R -i lampp    # SAFER VERSION - Adding -i makes it a little safer, because it will prompt you on every deletion. However, if you are deleting many files this is not going to be very practical.
+
+There are lots of ways to delete a directory through CLI mode. It depends on which way you are comfortable with.
+
+rm -rvf /path/to/directory
+
+-r = remove directories and their contents recursively
+-v = explain what is being done
+-f = ignore nonexistent files, never prompt
+=================================
