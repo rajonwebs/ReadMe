@@ -1,0 +1,2 @@
+rm -rf lampp      #It deletes all files and folders contained in the lampp directory.
+rm -R -i lampp    # SAFER VERSION - Adding -i makes it a little safer, because it will prompt you on every deletion. However, if you are deleting many files this is not going to be very practical.
