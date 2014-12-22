@@ -9,4 +9,5 @@ rm -rvf /path/to/directory
 -r = remove directories and their contents recursively
 -v = explain what is being done
 -f = ignore nonexistent files, never prompt
-=================================
+=================================Creating Directories=====
+mkdir -p spec/features        #creates sub directories...
