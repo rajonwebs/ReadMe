@@ -1,0 +1,6 @@
+git config --global user.email "rajonwebs@gmail.com"
+git config --global user.name "Rajesh Shankar"
+git init           #initialized empty repository
+git status         #shows status of current directory
+git add .
+git commit -m  "rails applicatioon"   #messages 
