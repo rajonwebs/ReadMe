@@ -1,0 +1,21 @@
+$bin/rake db:migrate #runs pending migrations including new ones that we recently created
+$ bin/rake db:migrate RAILS_ENV = test   #migrates test database and RAILS_ENV  keeps seperate copy environment for development and test database. When we run tests in our Rails application, the database is cleared out every single test run. when we're developing locally, so we keep that in a separate database.
+
+
+==============
+bin/rails generate rspecc:install 
+            #generates coouple of file (spec folder and spec_helper.rb)
+
+bundle binstubs rspec-core
+            #after adding in spec_helper.rb
+
+bin/rake spec 
+	#to run all our tests
+
+bin/rspe spec/features/todo_lists/create_spec.rb
+	#runs the particular test
+
+=========SCAFFOLD
+bin/rails generate scaffold todo_list tile:string description:text
+
+bin/rake db:migrate
