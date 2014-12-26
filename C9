@@ -1,0 +1,14 @@
+USING CLOUD 9 OR C9 IDE DASHBOARD
+To run a rails application:
+https://docs.c9.io/running_a_rails_app.html
+1-Open the terminal and type gem install rails
+When done, type rails new example -d mysql
+2-Edit your database configuration in configs/database.yml
+3-Type rails s -b $IP -p $PORT
+Note :- after point 3, we do not need to use rails server command to start.
+========================
+url:- https://odot-rajonwebs-1.c9.io/todo_lists
+Here odot is the application/workspace name
+     todo_lists is the scaffold name or referring routes.rb where "resourse :todo_lists...this is inserted by scaffold
+
+to shortcut we can add====root 'todo_lists#index'
