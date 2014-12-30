@@ -6,4 +6,7 @@ rvm list
 rvm use 1.9.3               # to use other than default version of rvm
 rvm --default use 1.9.3     # to make the version default
 
+rvm get stable     #to get the most recent latest stable version of rvm
+rvm install 2.1.1
+
 
