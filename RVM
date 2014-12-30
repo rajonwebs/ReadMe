@@ -1,0 +1,9 @@
+rvm -v
+rvm list
+rvm install 1.9.3         # to install previous version of ruby
+rvm list
+
+rvm use 1.9.3               # to use other than default version of rvm
+rvm --default use 1.9.3     # to make the version default
+
+
