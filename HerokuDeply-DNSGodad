@@ -1,0 +1,33 @@
+Pointing a GoDaddy domain to a Heroku app
+https://devcenter.heroku.com/articles/custom-domains 
+http://thenomadicfreelancer.blogspot.com/2012/08/pointing-godaddy-domain-to-your-heroku.html
+
+1) Custom Subdomains
+
+For each custom subdomain use domains:add in the Terminal.
+
+heroku domains:add www.example.com
+2) Subdomain DNS
+
+Go to the domain's DNS manager and configure it with a CNAME record pointing the subdomain to your herokuapp.com hostname.
+
+Record	Name	Target
+CNAME	www	example.herokuapp.com
+To check that this worked correctly run host www.example.com
+
+3) URL Forwarding
+
+This will work to have www.example.com forward to www.example.herokuapp.com, but it won't work if a user types example.com into the browser.
+
+To get this to work, go to the GoDaddy domain information and set forwarding to www.example.com.
+==============================================================
+There are 2 steps you need to perform,
+
+Add the custom domains addon and add the domain your going to use, eg www.mywebsite.com to your application
+Go to your domain registrar control panel and set www.mywebsite.com to be a CNAME entry to yourapp.herokuapp.com assuming you are using the CEDAR stack.
+There is a third step if you want to use a naked domain, eg mywebsite.com when you would have to add the IP addresses of the Heroku load balancers to your DNS for mywebsite.com
+You can read more about this at http://devcenter.heroku.com/articles/custom-domains
+
+At a guess you've missed out the first step perhaps?
+
+UPDATE: Following the announcement of Bamboo's EOL proxy.heroku.com being retired (September 2014) for Bamboo applications so these should also now use the yourapp.herokuapp.com mapping now as well.
